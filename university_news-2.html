@@ -1,95 +1,44 @@
 <!doctype html>
-<html lang="ja"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>月面でのロボット心臓試験に成功 ― 現在も評価を継続中</title>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>最新の大学ニュース - 最終更新情報</title>
 <style>
-:root {--brand:#0b3d91;--ink:#0b1220;--muted:#5b6375;--line:#d1d6e0;--max:980px}
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  color:var(--ink);font:15px/1.78 -apple-system,system-ui,Segoe UI,Roboto,sans-serif;
-  background:
-    linear-gradient(180deg,rgba(2,6,23,.85),rgba(2,6,23,.85)),
-    url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+:root {
+    --brand: #063491;
+    --ink: #001222;
+    --muted: #b5d375;
+    --line: #d1d1d1;
 }
-body:before{
-  content:"";position:fixed;inset:0;
-  background:
-    radial-gradient(80vw 80vw at 10% -10%,rgba(96,165,250,.25),transparent 60%),
-    radial-gradient(60vw 60vw at 120% 10%,rgba(20,184,166,.18),transparent 60%),
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' opacity='.12'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop stop-color='#60a5fa'/><stop offset='1' stop-color='#22d3ee'/></linearGradient></defs><g font-family='monospace' font-size='10' fill='url(#g)'><text x='0' y='20'>01100110 01101111 01101111 01100010 01100001 01110010</text><text x='0' y='40'>for(i=0;i&lt;n;i++){heart.pump();}</text><text x='0' y='60'>while(state!='safe'){optimize();}</text></g></svg>") center/600px repeat;
-  mix-blend-mode:screen;pointer-events:none;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.topbar{background:rgba(11,61,145,.9);color:#fff;backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.1)}
-.topbar .wrap{max-width:var(--max);margin:auto;display:flex;align-items:center;gap:24px;padding:12px 16px}
-.logo{display:flex;flex-direction:column;line-height:1.2}
-.logo .jp{font-weight:800;font-size:20px;letter-spacing:.4px}
-.logo .en{font-size:11px;opacity:.88}
-.nav{margin-left:auto;display:flex;gap:16px;opacity:.95;font-size:14px}
-.nav a{color:#e6f0ff;text-decoration:none;font-weight:600}
-.wrap{max-width:var(--max);margin:auto;padding:22px 16px}
-.headline{font-size:28px;line-height:1.15;margin:14px 0 8px;color:#e6f0ff}
-.sub{color:#c8d3ea;margin:0 0 18px}
-.meta{color:#c8d3ea;font-size:13px;margin-bottom:24px;border-bottom:1px solid rgba(255,255,255,.18);padding-bottom:12px}
-.content{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:start}
-.article{background:rgba(255,255,255,.95);padding:20px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,.25)}
-.thumb{border-radius:14px;overflow:hidden;background:rgba(255,255,255,.95);box-shadow:0 10px 36px rgba(2,6,23,.35)}
-.thumb img{display:block;width:100%;height:auto;max-height:700px;object-fit:cover}
-.thumb figcaption{font-size:12px;color:var(--muted);padding:8px 10px;background:#f3f6fb}
-.footer{margin-top:32px;border-top:1px solid rgba(255,255,255,.2);padding:12px 0;color:#c8d3ea;font-size:12px;display:flex;justify-content:space-between}
-.actions{display:flex;gap:8px;margin:12px 0}
-.btn{border:1px solid var(--line);background:#fff;padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:700}
-.btn.primary{background:#0b3d91;color:#fff;border-color:#0b3d91}
-@media print{.nav,.actions{display:none!important}body{background:#fff}.wrap{padding:0 8mm}@page{size:A4;margin:12mm}.headline{color:#0b3d91}.sub,.meta{color:#555}}
-@media (max-width:800px){.content{grid-template-columns:1fr;gap:16px}}
+body {
+    color: var(--ink);
+    font: 15px/1.7 system-ui, sans-serif;
+    background:
+        linear-gradient(188deg, rgba(2, 0, 23, 0.85), rgba(2, 23, 85, 0.85)),
+        url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px;
+}
+img {
+    max-width: 90%;
+    height: auto;
+    border: 4px solid white;
+    border-radius: 8px;
+    margin-top: 30px;
+}
 </style>
 </head>
 <body>
-  <div class="topbar">
-    <div class="wrap">
-      <div class="logo">
-        <span class="jp">東京大学</span>
-        <span class="en">University of Tokyo</span>
-      </div>
-      <nav class="nav">
-        <a href="#">大学概要</a><a href="#">入学案内</a><a href="#">学部・大学院</a><a href="#">研究活動</a>
-      </nav>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="actions"><button class="btn primary" onclick="window.print()">印刷 / PDF保存</button></div>
-    <h1 class="headline">月面でのロボット心臓試験に成功 ― 現在も評価を継続中</h1>
-    <p class="sub">医療科学と宇宙探査の両分野における画期的な成果</p>
-    <div class="meta">Research News · Biomedical Engineering · 2025-08-05</div>
-    <section class="content">
-      <article class="article"><p>医療科学と宇宙探査の交差点において、本プロジェクトは心臓ケアの未来像を再定義する可能性を示した。月面という極限環境下での機能検証は、地上での臨床導入に向けた信頼性の根拠を段階的に積み上げる試金石となる。</p>
-<p>月面試験では、低重力に特化した拍動制御アルゴリズムが適用され、ポンプ効率と流量安定性が事前シミュレーションと高い相関を示した。これにより、微小重力に起因する循環動態の変動へ適応する制御設計の妥当性が裏付けられた。</p>
-<p>材料工学の観点からは、耐放射線性ポリマーと金属複合材のハウジングが温度サイクルに対する寸法安定性を保持した。密封性と耐疲労特性は、地上試験と同等以上の指標を達成した。</p>
-<p>エネルギーマネジメントでは、モジュール化されたバッテリーパックと冗長化電源経路が採用され、消費電力のピーク抑制とフェールセーフを両立。異常時には自律的にセーフモードへ移行する設計が奏功した。</p>
-<p>生体適合性の初期評価として、血液接触面の表面改質により血栓形成リスクの低減が示唆された。今後はより長期の循環系シミュレーションとin vivoに近い試験系での追試が予定されている。</p>
-<p>医療科学と宇宙探査の交差点において、本プロジェクトは心臓ケアの未来像を再定義する可能性を示した。月面という極限環境下での機能検証は、地上での臨床導入に向けた信頼性の根拠を段階的に積み上げる試金石となる。</p>
-<p>月面試験では、低重力に特化した拍動制御アルゴリズムが適用され、ポンプ効率と流量安定性が事前シミュレーションと高い相関を示した。これにより、微小重力に起因する循環動態の変動へ適応する制御設計の妥当性が裏付けられた。</p>
-<p>材料工学の観点からは、耐放射線性ポリマーと金属複合材のハウジングが温度サイクルに対する寸法安定性を保持した。密封性と耐疲労特性は、地上試験と同等以上の指標を達成した。</p>
-<p>エネルギーマネジメントでは、モジュール化されたバッテリーパックと冗長化電源経路が採用され、消費電力のピーク抑制とフェールセーフを両立。異常時には自律的にセーフモードへ移行する設計が奏功した。</p>
-<p>生体適合性の初期評価として、血液接触面の表面改質により血栓形成リスクの低減が示唆された。今後はより長期の循環系シミュレーションとin vivoに近い試験系での追試が予定されている。</p>
-<p>医療科学と宇宙探査の交差点において、本プロジェクトは心臓ケアの未来像を再定義する可能性を示した。月面という極限環境下での機能検証は、地上での臨床導入に向けた信頼性の根拠を段階的に積み上げる試金石となる。</p>
-<p>月面試験では、低重力に特化した拍動制御アルゴリズムが適用され、ポンプ効率と流量安定性が事前シミュレーションと高い相関を示した。これにより、微小重力に起因する循環動態の変動へ適応する制御設計の妥当性が裏付けられた。</p>
-<p>材料工学の観点からは、耐放射線性ポリマーと金属複合材のハウジングが温度サイクルに対する寸法安定性を保持した。密封性と耐疲労特性は、地上試験と同等以上の指標を達成した。</p>
-<p>エネルギーマネジメントでは、モジュール化されたバッテリーパックと冗長化電源経路が採用され、消費電力のピーク抑制とフェールセーフを両立。異常時には自律的にセーフモードへ移行する設計が奏功した。</p>
-<p>生体適合性の初期評価として、血液接触面の表面改質により血栓形成リスクの低減が示唆された。今後はより長期の循環系シミュレーションとin vivoに近い試験系での追試が予定されている。</p>
-<p>医療科学と宇宙探査の交差点において、本プロジェクトは心臓ケアの未来像を再定義する可能性を示した。月面という極限環境下での機能検証は、地上での臨床導入に向けた信頼性の根拠を段階的に積み上げる試金石となる。</p>
-<p>月面試験では、低重力に特化した拍動制御アルゴリズムが適用され、ポンプ効率と流量安定性が事前シミュレーションと高い相関を示した。これにより、微小重力に起因する循環動態の変動へ適応する制御設計の妥当性が裏付けられた。</p>
-<p>材料工学の観点からは、耐放射線性ポリマーと金属複合材のハウジングが温度サイクルに対する寸法安定性を保持した。密封性と耐疲労特性は、地上試験と同等以上の指標を達成した。</p>
-<p>エネルギーマネジメントでは、モジュール化されたバッテリーパックと冗長化電源経路が採用され、消費電力のピーク抑制とフェールセーフを両立。異常時には自律的にセーフモードへ移行する設計が奏功した。</p>
-<p>生体適合性の初期評価として、血液接触面の表面改質により血栓形成リスクの低減が示唆された。今後はより長期の循環系シミュレーションとin vivoに近い試験系での追試が予定されている。</p></article>
-      <figure class="thumb">
-        <img src="IMG_5874.jpg" alt="Robotic Heart thumbnail">
-        <figcaption>Figure 1. 月面でのロボット心臓試験のサムネイル</figcaption>
-      </figure>
-    </section>
-    <footer class="footer">
-      <span>© 東京大学</span>
-      <span>2025-08-05 12:00</span>
-    </footer>
-  </div>
+    <h1>大学ニュース</h1>
+    <p>最新情報をお届けします</p>
+    <img src="IMG_5874.jpg" alt="University News">
 </body>
 </html>
